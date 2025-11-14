@@ -1,0 +1,79 @@
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    padding: 0;
+    background-color: #ca2c2c;
+    color:#2d6fbb;
+    line-height:1.45;
+}
+
+.container{
+    max-width:var(--max-width);
+    margin:0 auto;
+    padding:0 1rem;
+}
+
+.header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:1rem;
+    margin-bottom:2rem;
+}
+.brand{
+    display:flex;
+    align-items:center;
+    gap:.75rem;
+    text-decoration:none;
+    color:inherit;
+    font-weight:var(--fw-medium);
+    font-size:1.125rem;
+}
+.brand .logo{
+    width:44px;
+    height:44px;
+    border-radius:10px;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    font-weight:700;
+    box-shadow:0 6px 18px rgba(12,22,43,0.6);
+}
+
+/* Nav */
+.nav{
+    display:flex;
+    gap:1rem;
+    align-items:center;
+}
+.nav a{
+    color:var(--muted);
+    text-decoration:none;
+    padding:.5rem .75rem;
+    border-radius:8px;
+    font-weight:500;
+    transition:all .16s ease;
+}
+.nav a:hover, .nav a:focus{
+    background:var(--glass);
+    color:#fff;
+}
+
+section{
+    padding:20px;
+    margin:20px;
+    background:#ffffff;
+    border-radius:5px;
+}
+
+footer{
+    text-align:center;
+    padding:10px 0;
+    background:#35424a;
+    color:#ffffff;
+}
